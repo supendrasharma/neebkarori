@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This premium domain is available for acquisition. Enquire to acquire the domain.">
+  <title>Domain For Sale | Enquire to Acquire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="badge">DOMAIN AVAILABLE</div>
+      <h1><span id="domainName">YourDomain.com</span></h1>
+      <p class="headline">A memorable domain for your next big idea.</p>
+      <p class="subtext">
+        This domain is currently available for acquisition. Make an enquiry below
+        and we’ll get back to you with the next steps.
+      </p>
+      <a class="cta" href="#enquire">Enquire to Acquire <span>↓</span></a>
+    </section>
+
+    <section class="form-card" id="enquire">
+      <div class="form-heading">
+        <div>
+          <div class="eyebrow">GET IN TOUCH</div>
+          <h2>Enquire to acquire</h2>
+          <p>Tell us how we can reach you and we’ll respond to your enquiry.</p>
+        </div>
+      </div>
+
+      <!-- FormSubmit provides email delivery for a static website.
+           The first submission may require one-time activation of the email address. -->
+      <form action="https://formsubmit.co/supendra.sharma@outlook.com" method="POST">
+        <input type="hidden" name="_subject" value="New Domain Acquisition Enquiry">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="thanks.html">
+
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label for="contact">Contact Number</label>
+          <input id="contact" name="contact" type="tel" placeholder="+91 98765 43210" autocomplete="tel" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+        </div>
+
+        <div class="field">
+          <label for="message">Message <span>(optional)</span></label>
+          <textarea id="message" name="message" rows="4" placeholder="Anything you'd like to share..."></textarea>
+        </div>
+
+        <button type="submit">Send Enquiry <span>→</span></button>
+        <p class="privacy">Your details will be used only to respond to this domain acquisition enquiry.</p>
+      </form>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> <span id="footerDomain">YourDomain.com</span></span>
+      <span>Domain available for acquisition</span>
+    </footer>
+  </main>
+
+  <script>
+    // Change this once when deploying:
+    const DOMAIN_NAME = "neebkarori.co.in";
+
+    document.getElementById("domainName").textContent = DOMAIN_NAME;
+    document.getElementById("footerDomain").textContent = DOMAIN_NAME;
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
